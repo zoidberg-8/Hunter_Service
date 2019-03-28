@@ -2,16 +2,20 @@
   "name": "",
   "version": "",
   "description": "",
-  "author": "",
+  "author": "Hunter",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "build": "webpack --mode production"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
