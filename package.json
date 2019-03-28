@@ -8,11 +8,13 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "seed": "mysql -u root < schema.sql"
   },
   "dependencies": {},
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "mysql": "^2.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "webpack": "^4.29.6",
