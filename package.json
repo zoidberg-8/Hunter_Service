@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "seed": "mysql -u root < schema.sql"
+    "seed": "mysql -u root < schema.sql && node seedDb.js"
   },
   "dependencies": {},
   "devDependencies": {
