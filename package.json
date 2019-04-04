@@ -16,6 +16,10 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "body-parser": "^1.18.3",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "faker": "^4.1.0",
