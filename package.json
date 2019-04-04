@@ -1,9 +1,9 @@
 {
-  "name": "",
-  "version": "",
+  "name": "Hunter_Service",
+  "version": "1.0.0",
   "description": "",
   "author": "Hunter",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
