@@ -1,0 +1,26 @@
+/* body {
+  overflow: hidden;
+} */
+.describe {
+  max-width: 500px;
+  margin: 0 10px 0 0;
+}
+.slide-show {
+  position: relative;
+  max-width: 226px;
+  margin: 0;
+}
+
+.slide-show-wrapper {
+  display: flex;
+  position: absolute;
+}
+
+.shoe {
+  margin: 0 10px 0 0;
+}
+
+.describe-body {
+  font-family: "futura-pt-condensed", sans-serif;
+  font-weight: 600;
+}

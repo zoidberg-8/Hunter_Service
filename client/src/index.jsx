@@ -6,12 +6,15 @@ import Suggestions from "./components/suggestions.jsx";
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      suggest: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    };
   }
   render() {
     return (
       <div>
         <Description />
-        <Suggestions />
+        <Suggestions suggests={this.state.suggest} />
       </div>
     );
   }
