@@ -5,9 +5,11 @@ const bodyParser = require("body-parser");
 
 const app = express();
 let port = process.env.PORT || 3000;
-
+//test branch
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(express.static(__dirname + "/../client/dist"));
 
 app.get("/api/suggestions", (req, res) => {
   db.getSuggestions(function(err, result) {
