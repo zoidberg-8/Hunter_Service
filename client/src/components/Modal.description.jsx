@@ -27,7 +27,7 @@ class ModalDescription extends React.Component {
             <b>{this.props.info.item_headline}</b>
           </p>
           <p>{this.props.info.description}</p>
-          <h2>Benefits</h2>
+          <h4>Benefits</h4>
           <ul>
             <li>{this.props.info.benefits}</li>
             <li>{this.props.info.benefits}</li>

@@ -23,7 +23,10 @@ for (var i = 0; i < newArr.length; i++) {
     [
       faker.lorem.words(),
       newArr[i],
-      faker.random.number(300),
+      faker.random.number({
+        min: 100,
+        max: 400
+      }),
       faker.lorem.words(),
       faker.random.number(10),
       faker.lorem.words()

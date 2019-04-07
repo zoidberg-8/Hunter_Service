@@ -13,10 +13,9 @@ class Suggestions extends React.Component {
         <h1>YOU MAY ALSO LIKE</h1>
         <div className="slide-show">
           <div className="slide-show-wrapper">
-            <IndividualSuggestion />
-            {/* {this.props.suggests.map(() => (
-              <IndividualSuggestion />
-            ))} */}
+            {this.props.suggests.map((data) => (
+              <IndividualSuggestion data={data}/>
+            ))}
           </div>
         </div>
       </div>
