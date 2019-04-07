@@ -24,30 +24,15 @@ class ModalDescription extends React.Component {
           style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
         >
           <p>
-            <b>WALKING ON AIR.</b>
+            <b>{this.props.info.item_headline}</b>
           </p>
-          <p>
-            Boasting the largest-ever Max Air heel unit created by Nike, the
-            Nike Air Max 270 SE delivers visible Air under every step. Inspired
-            by iconic Air Max shoes from the early '90s, this modern
-            interpretation delivers comfort solutions in a breathable, sleek
-            silhouette.
-          </p>
+          <p>{this.props.info.description}</p>
           <h2>Benefits</h2>
           <ul>
-            <li>Large Max Air unit offers responsive cushioning.</li>
-            <li>Bootie construction delivers a sock-like fit.</li>
-            <li>
-              Waffle-inspired rubber coverage on the outsole supplies durable
-              traction.
-            </li>
-            <li>
-              TPU heel clip adds support and a smooth transition to the Max Air
-              unit.
-            </li>
-            <li>Heel pull tab allows for easy on and off.</li>
-            <li>Shown: Anthracite/Black/Bright Crimson/Vol</li>
-            <li>Style: AQ9164-005</li>
+            <li>{this.props.info.benefits}</li>
+            <li>{this.props.info.benefits}</li>
+            <li>{this.props.info.benefits}</li>
+            <li>{this.props.info.benefits}</li>
           </ul>
         </Modal>
       </div>

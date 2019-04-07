@@ -9,21 +9,16 @@ class Description extends React.Component {
   render() {
     return (
       <div className="describe">
-        <p>
-          The Nike Air Max 720 goes bigger than ever before with Nike’s tallest
-          Air unit yet, offering more air underfoot for unimaginable, all-day
-          comfort. Has Air Max gone too far? We hope so.
-        </p>
-
+        <p>{this.props.describes.description}</p>
         <div>
-          <b>Shown:</b> Black/Volt/Bright Crimson
+          <b>Shown:</b> {this.props.describes.shown}
         </div>
         <div>
-          <b>Style:</b> AO2924-008
+          <b>Style:</b> {this.props.describes.style}
         </div>
         <p />
         <div>
-          <ModalDescription />
+          <ModalDescription info={this.props.describes} />
         </div>
       </div>
     );

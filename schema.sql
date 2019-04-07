@@ -17,8 +17,10 @@ CREATE TABLE suggestions (
 
 CREATE TABLE description (
   id int NOT NULL AUTO_INCREMENT,
-  description varchar(500) NOT NULL,
-  benefits varchar(500) NOT NULL,
+  description varchar(10000) NOT NULL,
+  benefits varchar(10000) NOT NULL,
   item_headline varchar(500) NOT NULL,
+  shown varchar(500) NOT NULL,
+  style varchar(500) NOT Null,
   PRIMARY KEY (ID)
 );

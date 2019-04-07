@@ -40,8 +40,14 @@ for (var i = 0; i < newArr.length; i++) {
 
 for (var i = 0; i < 1; i++) {
   connection.query(
-    "insert into description(description, benefits, item_headline) values (?,?,?);",
-    [faker.lorem.words(), faker.lorem.words(), faker.lorem.words()],
+    "insert into description(description, benefits, item_headline, shown, style) values (?,?,?,?,?);",
+    [
+      faker.lorem.paragraph(),
+      faker.lorem.paragraph(),
+      faker.lorem.words(),
+      faker.lorem.words(),
+      faker.lorem.words()
+    ],
     function(err, result) {
       if (err) {
         console.log(err);
