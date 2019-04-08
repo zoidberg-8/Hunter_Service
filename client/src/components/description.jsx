@@ -10,12 +10,10 @@ class Description extends React.Component {
     return (
       <div className="describe">
         <p>{this.props.describes.description}</p>
-        <div>
-          <b>Shown:</b> {this.props.describes.shown}
-        </div>
-        <div>
-          <b>Style:</b> {this.props.describes.style}
-        </div>
+        <ul>
+          <li>Shown: {this.props.describes.shown}</li>
+          <li>Style: {this.props.describes.style}</li>
+        </ul>
         <p />
         <div>
           <ModalDescription info={this.props.describes} />

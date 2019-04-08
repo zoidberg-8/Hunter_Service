@@ -43,9 +43,9 @@ class Suggestions extends React.Component {
   render() {
     return (
       <div>
-        <h4>
+        <h3>
           <b>YOU MAY ALSO LIKE</b>
-        </h4>
+        </h3>
         <div className="slide-show">
           <button className="prev" onClick={this.prevPosition.bind(this)}>
             &lt;
