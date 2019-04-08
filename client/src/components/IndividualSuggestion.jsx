@@ -15,7 +15,8 @@ class IndividualSuggestion extends React.Component {
           height="450"
         />
         <p>{this.props.data[this.props.position].colors} colors</p>
-        <p>{this.props.data[this.props.position].name}</p>
+        <p>Nike Air {this.props.data[this.props.position].name}</p>
+        <p>{this.props.data[this.props.position].shoe_kind} Shoe</p>
         <p>${this.props.data[this.props.position].price}</p>
       </div>
     );

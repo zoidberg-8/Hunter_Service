@@ -24,18 +24,41 @@ class Suggestions extends React.Component {
     }
   }
 
+  prevPosition() {
+    var newArr = this.state.positions.map(data => {
+      return data - 1;
+    });
+    if (this.state.positions[0] === 0) {
+      this.setState({
+        positions: [0, 1, 2]
+      });
+    }
+    if (this.state.positions[0] !== 0) {
+      this.setState({
+        positions: newArr
+      });
+    }
+  }
+
   render() {
     return (
       <div>
-        <h1>YOU MAY ALSO LIKE</h1>
-        <button>previous</button>
-        <button onClick={this.nextPosition.bind(this)}>next</button>
+        <h4>
+          <b>YOU MAY ALSO LIKE</b>
+        </h4>
         <div className="slide-show">
+          <button className="prev" onClick={this.prevPosition.bind(this)}>
+            &lt;
+          </button>
+          <button className="next" onClick={this.nextPosition.bind(this)}>
+            &gt;
+          </button>
           <div className="slide-show-wrapper">
             <IndividualSuggestion
               data={this.props.suggests}
               position={this.state.positions[0]}
             />
+
             <IndividualSuggestion
               data={this.props.suggests}
               position={this.state.positions[1]}
