@@ -108,3 +108,58 @@
   flex-shrink: 0;
   height: 100%;
 }
+
+.size {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.size-button {
+  height: 55px;
+  width: 80px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.size-button:hover {
+  border-color: black;
+}
+
+.button-div {
+  padding: 3px;
+}
+
+.add-cart {
+  height: 50px;
+  width: 375px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.shopping-buttons {
+  display: flex;
+}
+
+.heart {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.heart:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=100);
+}
+
+.add-cart:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=100);
+}

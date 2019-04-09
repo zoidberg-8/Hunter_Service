@@ -9,7 +9,27 @@ class App extends React.Component {
     super(props);
     this.state = {
       suggest: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-      descript: []
+      descript: [],
+      sizes: [
+        5,
+        6,
+        6.5,
+        7,
+        7.5,
+        8,
+        8.5,
+        9,
+        9.5,
+        10,
+        10.5,
+        11,
+        11.5,
+        12,
+        12.5,
+        13,
+        14,
+        15
+      ]
     };
   }
   componentDidMount() {
@@ -33,7 +53,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Description describes={this.state.descript} />
+        <Description describes={this.state.descript} size={this.state.sizes} />
         <Suggestions suggests={this.state.suggest} />
       </div>
     );
