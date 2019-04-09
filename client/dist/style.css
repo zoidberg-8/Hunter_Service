@@ -2,17 +2,6 @@
   max-width: 500px;
   margin: 0 10px 0 0;
 }
-.slide-show {
-  position: absolute;
-  width: 500;
-  height: 599;
-  margin: 0;
-}
-
-.slide-show-wrapper {
-  display: flex;
-}
-
 .shoe {
   margin: 0 20px 0 0;
 }
@@ -28,7 +17,7 @@
   width: 45px;
   positionz-index: -1;
   position: absolute;
-  top: 250px;
+  top: 550px;
   bottom: 0;
   left: 0;
   background-color: white;
@@ -45,7 +34,7 @@
   width: 45px;
   positionz-index: -1;
   position: absolute;
-  top: 250px;
+  top: 550px;
   bottom: 0;
   right: 25px;
   background-color: white;
@@ -102,4 +91,20 @@
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 255);
+}
+
+.slide-show {
+  position: relative;
+  width: 1200px;
+  height: 599;
+  margin: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.slide-show-wrapper {
+  display: flex;
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
 }

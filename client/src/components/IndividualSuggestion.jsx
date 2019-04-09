@@ -10,14 +10,14 @@ class IndividualSuggestion extends React.Component {
       <div className="shoe">
         <p />
         <img
-          src={this.props.data[this.props.position].url}
+          src={this.props.data.url}
           width="370"
           height="450"
         />
-        <p>{this.props.data[this.props.position].colors} colors</p>
-        <h3>Nike Air {this.props.data[this.props.position].name}</h3>
-        <p>{this.props.data[this.props.position].shoe_kind} Shoe</p>
-        <p>${this.props.data[this.props.position].price}</p>
+        <p>{this.props.data.colors} colors</p>
+        <h3>Nike Air {this.props.data.name}</h3>
+        <p>{this.props.data.shoe_kind} Shoe</p>
+        <p>${this.props.data.price}</p>
       </div>
     );
   }
