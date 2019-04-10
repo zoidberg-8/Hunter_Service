@@ -19,7 +19,7 @@ var newArr = [
 
 for (var i = 0; i < newArr.length; i++) {
   connection.query(
-    "insert into suggestions(name, url,price, category, colors, style) values (?,?,?,?,?,?);",
+    "insert into suggestions(name, url,price, category, colors, style, shoe_kind) values (?,?,?,?,?,?,?);",
     [
       faker.lorem.words(),
       newArr[i],
@@ -29,6 +29,7 @@ for (var i = 0; i < newArr.length; i++) {
       }),
       faker.lorem.words(),
       faker.random.number(10),
+      faker.lorem.words(),
       faker.lorem.words()
     ],
     function(err, result) {
@@ -43,13 +44,14 @@ for (var i = 0; i < newArr.length; i++) {
 
 for (var i = 0; i < 1; i++) {
   connection.query(
-    "insert into description(description, benefits, item_headline, shown, style) values (?,?,?,?,?);",
+    "insert into description(description, benefits, item_headline, shown, style, product_details) values (?,?,?,?,?,?);",
     [
       faker.lorem.paragraph(),
       faker.lorem.paragraph(),
       faker.lorem.words(),
       faker.lorem.words(),
-      faker.lorem.words()
+      faker.lorem.words(),
+      faker.lorem.paragraph()
     ],
     function(err, result) {
       if (err) {
