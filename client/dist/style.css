@@ -17,7 +17,7 @@
   width: 45px;
   positionz-index: -1;
   position: absolute;
-  top: 550px;
+  top: 900px;
   bottom: 0;
   left: 0;
   background-color: white;
@@ -34,9 +34,9 @@
   width: 45px;
   positionz-index: -1;
   position: absolute;
-  top: 550px;
+  left: 1150px;
+  top: 900px;
   bottom: 0;
-  right: 25px;
   background-color: white;
   color: black;
   padding: 10px;
@@ -96,13 +96,13 @@
 .slide-show {
   position: relative;
   width: 1200px;
-  height: 599;
   margin: 0;
   display: flex;
   overflow-x: hidden;
 }
 
 .slide-show-wrapper {
+  position: relative;
   display: flex;
   width: 300px;
   flex-shrink: 0;

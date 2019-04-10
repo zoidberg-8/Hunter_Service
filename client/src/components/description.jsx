@@ -6,14 +6,27 @@ import SizeButton from "./SizeButton.jsx";
 class Description extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      background: "white",
+      colour: "black"
+    };
   }
+  clicked() {
+    this.setState({ colour: "white", background: "black" });
+  }
+
   render() {
     return (
       <div className="describe">
         <div>Select Size</div>
         <div className="size">
           {this.props.size.map(data => (
-            <SizeButton data={data} />
+            <SizeButton
+              data={data}
+              bgcolor={this.state.background}
+              color={this.state.colour}
+              clickedButton={this.clicked.bind(this)}
+            />
           ))}
         </div>
         <div className="shopping-buttons">

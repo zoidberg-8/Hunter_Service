@@ -18,6 +18,14 @@ class Suggestions extends React.Component {
     }
   }
 
+  onPrevClick() {
+    if (this.state.activeIndex > 1) {
+      this.setState({ activeIndex: this.state.activeIndex - 1 });
+    } else {
+      this.setState({ activeIndex: 0 });
+    }
+  }
+
   render() {
     return (
       <div>
@@ -39,7 +47,7 @@ class Suggestions extends React.Component {
           </div>
         </div>
         <div className="button-container">
-          <button className="prev" style={{ zIndex: -1 }}>
+          <button className="prev" onClick={this.onPrevClick.bind(this)}>
             &lt;
           </button>
           <button className="next" onClick={this.onNextClick.bind(this)}>
