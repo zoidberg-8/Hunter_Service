@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import IndividualSuggestion from "./IndividualSuggestion";
+import styles from "./Suggestions.css";
 
 class Suggestions extends React.Component {
   constructor(props) {
@@ -33,9 +34,9 @@ class Suggestions extends React.Component {
           <b>YOU MAY ALSO LIKE</b>
         </h3>
 
-        <div className="slide-show">
+        <div className={styles.slideshow}>
           <div
-            className="slide-show-wrapper"
+            className={styles.slideshowwrapper}
             style={{
               transform: `translateX(${this.state.activeIndex * -100}%)`,
               transition: "0.2s"
@@ -46,11 +47,11 @@ class Suggestions extends React.Component {
             ))}
           </div>
         </div>
-        <div className="button-container">
-          <button className="prev" onClick={this.onPrevClick.bind(this)}>
+        <div className={styles.buttoncontainer}>
+          <button className={styles.prev} onClick={this.onPrevClick.bind(this)}>
             &lt;
           </button>
-          <button className="next" onClick={this.onNextClick.bind(this)}>
+          <button className={styles.next} onClick={this.onNextClick.bind(this)}>
             &gt;
           </button>
         </div>

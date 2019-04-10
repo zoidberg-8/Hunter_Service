@@ -8,14 +8,18 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "build":"webpack -d --watch",
-    "run":"nodemon server/index.js",
+    "build": "webpack -d --watch",
+    "run": "nodemon server/index.js",
     "seed": "mysql -u root < schema.sql && node seedDb.js",
     "test": "jest --watchAll"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
     "babel-jest": "^24.7.1",
-    "express": "^4.16.4"
+    "css-loader": "^2.1.1",
+    "express": "^4.16.4",
+    "style-loader": "^0.23.1",
+    "webpack-combine-loaders": "^2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
