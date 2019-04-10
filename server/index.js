@@ -21,16 +21,6 @@ app.get("/api/suggestions", (req, res) => {
   });
 });
 
-app.get("/api/description", (req, res) => {
-  db.getDescription(function(err, result) {
-    if (err) {
-      console.log(err);
-    } else {
-      res.status(200).json(result);
-    }
-  });
-});
-
 app.listen(port, function() {
   console.log(`listening on port ${port}`);
 });
