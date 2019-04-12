@@ -14,17 +14,6 @@ var getSuggestions = function(callback) {
   });
 };
 
-var getDescription = function(callback) {
-  connection.query("select * from description", function(err, result) {
-    if (err) {
-      console.log(err);
-    } else {
-      callback(null, result);
-    }
-  });
-};
-
 module.exports = {
-  getSuggestions,
-  getDescription
+  getSuggestions
 };

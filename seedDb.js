@@ -28,30 +28,12 @@ for (var i = 0; i < newArr.length; i++) {
         max: 400
       }),
       faker.lorem.words(),
-      faker.random.number(10),
+         faker.random.number({
+        min: 1,
+        max: 10
+      }),
       faker.lorem.words(),
       faker.lorem.words()
-    ],
-    function(err, result) {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log(result);
-      }
-    }
-  );
-}
-
-for (var i = 0; i < 1; i++) {
-  connection.query(
-    "insert into description(description, benefits, item_headline, shown, style, product_details) values (?,?,?,?,?,?);",
-    [
-      faker.lorem.paragraph(),
-      faker.lorem.paragraph(),
-      faker.lorem.words(),
-      faker.lorem.words(),
-      faker.lorem.words(),
-      faker.lorem.paragraph()
     ],
     function(err, result) {
       if (err) {
